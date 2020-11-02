@@ -13,3 +13,4 @@ Validar se o arquivo .htaccess está localizado na raiz do projeto, com a seguin
   
 Configurar a conexão com o banco de dados no seguinte arquivo:  
 `application/config/database.php`  
+Definir o banco webapp para o funcionamento correto
