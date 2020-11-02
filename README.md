@@ -15,4 +15,5 @@ Configurar a conexão com o banco de dados no seguinte arquivo, a partir da linh
 `application/config/database.php`  
 Definir o banco "webapp" para o funcionamento correto
 
-Executar a URL: http://localhost/webapp/migrate
+Executar a URL <URL_RAIZ>/migrate
+Exemplo: http://localhost/webapp/migrate
