@@ -11,6 +11,9 @@ Validar se o arquivo .htaccess está localizado na raiz do projeto, com a seguin
 `RewriteCond %{REQUEST_FILENAME} !-d`  
 `RewriteRule ^(.*)$ index.php?/$1 [QSA,L]`  
   
-Configurar a conexão com o banco de dados no seguinte arquivo:  
+Configurar a conexão com o banco de dados no seguinte arquivo, a partir da linha 76:  
 `application/config/database.php`  
-Definir o banco webapp para o funcionamento correto
+Definir o banco "webapp" para o funcionamento correto
+
+Executar a URL <URL_RAIZ>/migrate
+Exemplo: http://localhost/webapp/migrate
