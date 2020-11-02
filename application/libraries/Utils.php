@@ -15,7 +15,7 @@ class Utils {
 		$hours = floor($seconds / 3600);
 		$minutes = floor(($seconds / 60) % 60);
 		$seconds = $seconds % 60;			
-		$time = str_pad($hours, 2 , '0', STR_PAD_LEFT) . ':' . str_pad($minutes, 2 , '0', STR_PAD_LEFT) . ':' . str_pad($seconds, 2 , '0', STR_PAD_LEFT);
+		$time = str_pad($hours, 2 , '0', STR_PAD_LEFT) . ':' . str_pad($minutes, 2 , '0', STR_PAD_LEFT);
 		return $time;
 	}
 }

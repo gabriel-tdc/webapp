@@ -56,7 +56,7 @@ class Site extends CI_Controller {
 				$total += $this->utils->convertInSeconds($bancoHora->total);
 			}
 		}
-		$totalTime = $this->utils->convertSecondsInDate($total);		
+		$totalTime = $this->utils->convertSecondsInDate($total);
 
 		$data = [
 			'page' => 'ponto',

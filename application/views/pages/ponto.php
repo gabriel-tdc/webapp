@@ -57,7 +57,8 @@
 								<tfoot>
 									<tr>
 										<th scope="row" colspan="5">Saldo total:</th>
-										<th><?= date('H:i', strtotime($totalTime)); ?></th>
+										<th><?= $totalTime; ?>
+										</th>
 										<th></th>
 									</tr>
 								</tfoot>
