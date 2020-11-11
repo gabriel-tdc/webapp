@@ -28,7 +28,7 @@
 								<div class="input-group-prepend">
 								<div class="input-group-text"><i class="fas fa-chevron-circle-right"></i></div>
 								</div>
-								<input type="time" class="form-control" id="start" name="start" placeholder="Início" value="<?= date('H:i', strtotime($bancoHoras->start)); ?>">
+								<input type="time" class="form-control" id="start" name="start" placeholder="Início" value="<?= $bancoHoras->start ? date('H:i', strtotime($bancoHoras->start)) : ''; ?>">
 							</div>
 
 							<label class="sr-only" for="pause">Saída para Almoço</label>
@@ -36,7 +36,7 @@
 								<div class="input-group-prepend">
 								<div class="input-group-text"><i class="fas fa-pause-circle"></i></div>
 								</div>
-								<input type="time" class="form-control" id="pause" name="pause" placeholder="Saída para Almoço" value="<?= date('H:i', strtotime($bancoHoras->pause)); ?>">
+								<input type="time" class="form-control" id="pause" name="pause" placeholder="Saída para Almoço" value="<?= $bancoHoras->pause ? date('H:i', strtotime($bancoHoras->pause)) : ''; ?>">
 							</div>
 
 							<label class="sr-only" for="return">Volta do Almoço</label>
@@ -44,7 +44,7 @@
 								<div class="input-group-prepend">
 								<div class="input-group-text"><i class="fas fa-play-circle"></i></div>
 								</div>
-								<input type="time" class="form-control" id="return" name="return" placeholder="Volta do Almoço" value="<?= date('H:i', strtotime($bancoHoras->return)); ?>">
+								<input type="time" class="form-control" id="return" name="return" placeholder="Volta do Almoço" value="<?= $bancoHoras->return ? date('H:i', strtotime($bancoHoras->return)) : ''; ?>">
 							</div>
 
 							<label class="sr-only" for="finish">Encerramento</label>
@@ -52,7 +52,7 @@
 								<div class="input-group-prepend">
 								<div class="input-group-text"><i class="fas fa-door-open"></i></div>
 								</div>
-								<input type="time" class="form-control" id="finish" name="finish" placeholder="Encerramento" value="<?= date('H:i', strtotime($bancoHoras->finish)); ?>">
+								<input type="time" class="form-control" id="finish" name="finish" placeholder="Encerramento" value="<?= $bancoHoras->finish ? date('H:i', strtotime($bancoHoras->finish)) : ''; ?>">
 							</div>
 
 							

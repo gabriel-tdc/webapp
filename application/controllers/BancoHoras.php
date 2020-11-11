@@ -123,7 +123,7 @@ class BancoHoras extends Middleware {
 		// Validação das Horas
 		$hourFields = ["start", "pause", "return", "finish"];
 		foreach($hourFields as $hourField){
-			if(	isset($data[$hourField]) && !$this->isHour( $data[$hourField] ) ){
+			if(	isset($data[$hourField]) && $data[$hourField] != '' && !$this->isHour( $data[$hourField] ) ){
 				http_response_code(400);
 				echo json_encode(
 					['message' => "O campo $hourField deve ser no formato de hora (00:00)"]
