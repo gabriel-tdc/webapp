@@ -33,6 +33,10 @@ class Banco_horas_model extends CI_Model {
 				unset($data[$index]);
 				unset($data['id']);
 			}
+			
+			if($postFields == ''){
+				unset($data[$index]);
+			}
 		}
 		
 		if(count($data) >= 1){
